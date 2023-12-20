@@ -1,0 +1,19 @@
+.person {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 2rem;
+  transition: transform 0.1s ease-out;
+}
+
+.person:hover {
+  background-color: #8884;
+}
+
+.person:active {
+  transform: scale(1.1);
+}

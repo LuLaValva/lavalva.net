@@ -1,0 +1,17 @@
+<!-- use tags -->
+import styles from "./person.module.css"
+
+export interface Input {
+  name: string;
+  last?: string;
+  img?: string;
+}
+
+const/link = input.last ? undefined : `https://${input.name.toLowerCase()}.lavalva.net`
+
+${link ? "a" : "button"} class=styles.person href=link
+  if=input.img
+    img src=input.img alt=`Picture of ${input.name}`
+  -- ${input.name}
+  if=input.last
+    -- &nbsp;(${input.last})

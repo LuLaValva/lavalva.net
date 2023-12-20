@@ -1,0 +1,21 @@
+<!-- use tags -->
+import styles from "./tree.module.css";
+import type { Input as PersonInput } from "<person>";
+
+export interface Input {
+  name: string;
+  last?: string;
+  spouse?: Marko.AttrTag<PersonInput>;
+  child?: Marko.RepeatableAttrTag<Input>;
+}
+
+const/children=[...(input.child ?? [])]
+
+div class=styles.tree
+  div
+    person ...input
+    if=input.spouse
+      person ...input.spouse
+  div
+    for|child| of=children
+      tree ...child

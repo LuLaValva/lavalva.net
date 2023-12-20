@@ -1,0 +1,17 @@
+.tree {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.tree:not(:last-of-type) {
+  border-bottom: 1px dotted currentColor;
+}
+
+.tree > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
